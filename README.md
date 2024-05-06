@@ -3,6 +3,12 @@
 ## Introduction
 Let’s use what we’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a restaurant homepage! By the end, we are going to be using JavaScript alone to generate the entire contents of the website!
 
+**Note: DOM elements should be created using JavaScript but styling can be done in a separate CSS file.**
+
+>[!TIP]
+>When working with packages that are installed with npm, you don’t need to >track the contents of node_modules with git, nor push those files to >GitHub. This is because the package.json file contains all the information, so that anyone can clone your project and install them on their machine with npm install.
+
+
 ## Asignment
 1. Start the project the same way you began the webpack tutorial project.
     1. Run `npm init` in your project directory to generate a `package.json` file.
@@ -29,3 +35,4 @@ Let’s use what we’ve learned and take a chance to continue practicing DOM ma
                 `"scripts": { "YourScriptName": "git subtree push --prefix dist origin gh-pages" }`
             - Now each time you need to update your project’s live preview, you `npm run <YourScriptName>` in your project’s terminal.
             - To learn more about this, here’s a short tutorial video on [npm scripts](https://www.youtube.com/watch?v=REdzp64dijs).
+9. Recall that the **source branch** for GitHub Pages is set in your repository’s settings.

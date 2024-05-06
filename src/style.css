@@ -1,0 +1,250 @@
+/* @font-face {
+    font-family: 'MyFont';
+    src: url('./Branda-yolq.woff') format('woff'),
+        url('./Sevillana-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.hello{
+    color: red;
+    background: url('./gambar.png');
+    font-family: 'MyFont';
+} */
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url('/assets/images/honey-background.png');
+}
+
+#navbar {
+    text-align: center;
+    background-color: #ffde73;
+    height: 70px;
+    margin-bottom: 45px;
+}
+
+.btn-nav {
+    background-color: #ffde73;
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    border: 3px solid saddlebrown;
+    border-radius: 3px;
+}
+
+#content {
+    background-color: #ffde73;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 55px;
+    border-radius: 18px;
+}
+
+.header-content {
+    border: 15px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.para-header-content {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.review {
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 23px;
+}
+
+.hour {
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.para-hour {
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+.location {
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-content-menu {
+    border: 15px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.para-header-content-menu {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.beverages {
+    max-width: 350px;
+    height: 60px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.beverages-content {
+    height: 480px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 23px;
+    margin-bottom: 30px;
+}
+
+.beverages-item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.beverages-item-pict {
+    height: 250px;
+    width: 250px;
+    bottom: 10px;
+    right: 45px;
+    border: 2px solid saddlebrown;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.sides {
+    max-width: 350px;
+    height: 60px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.sides-content {
+    height: 480px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 23px;
+    margin-bottom: 30px;
+}
+
+.sides-item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sides-item-pict {
+    height: 250px;
+    width: 250px;
+    bottom: 10px;
+    right: 45px;
+    border: 2px solid saddlebrown;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.main-dishes {
+    max-width: 350px;
+    height: 60px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.main-dishes-content {
+    height: 480px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 23px;
+    margin-bottom: 30px;
+}
+
+.main-dishes-item-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-dishes-item-pict {
+    height: 250px;
+    width: 250px;
+    bottom: 10px;
+    right: 45px;
+    border: 2px solid saddlebrown;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.contact-header-content {
+    border: 15px solid saddlebrown;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.para-contact-header-content {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-content {
+    height: 225px;
+    border: 10px solid saddlebrown;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 23px;
+    margin-bottom: 30px;
+}

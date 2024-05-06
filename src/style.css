@@ -1,22 +1,3 @@
-/* @font-face {
-    font-family: 'MyFont';
-    src: url('./Branda-yolq.woff') format('woff'),
-        url('./Sevillana-Regular.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-.hello{
-    color: red;
-    background: url('./gambar.png');
-    font-family: 'MyFont';
-} */
-
-/* * {
-    padding: 0;
-    margin: 0;
-} */
-
 body {
     padding: 0;
     margin: 0;

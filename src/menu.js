@@ -153,64 +153,6 @@ let menuSides = [
             '$1', toastAndJam),
 ]
 
-function createSidesContentOne() {
-    const divSidesContent = document.createElement('div');
-    divSidesContent.classList.add('sides-content');
-
-    const h3SidesItemName = document.createElement('h3');
-    h3SidesItemName.classList.add('sides-item-name');
-    h3SidesItemName.textContent = 'Toast and Jam';
-    divSidesContent.appendChild(h3SidesItemName);
-
-    const paraSidesItemDescription = document.createElement('p');
-    paraSidesItemDescription.classList.add('sides-item-description');
-    paraSidesItemDescription.textContent = 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.';
-    divSidesContent.appendChild(paraSidesItemDescription);
-
-    const paraSidesItemPrices = document.createElement('p');
-    paraSidesItemPrices.classList.add('sides-item-price');
-    paraSidesItemPrices.textContent = '$1';
-    divSidesContent.appendChild(paraSidesItemPrices);
-
-    const divSidesItemPrices = document.createElement('div');
-    divSidesItemPrices.classList.add('sides-item-pict');
-    divSidesItemPrices.title = 'Picture of toast and jam';
-    divSidesItemPrices.style.background = honeyTea;
-    divSidesItemPrices.style.backgroundSize = 'cover';
-    divSidesContent.appendChild(divSidesItemPrices);
-
-    return divSidesContent;
-}
-
-function createSidesContentTwo() {
-    const divSidesContent = document.createElement('div');
-    divSidesContent.classList.add('sides-content');
-
-    const h3SidesItemName = document.createElement('h3');
-    h3SidesItemName.classList.add('sides-item-name');
-    h3SidesItemName.textContent = 'Fresh Fruit';
-    divSidesContent.appendChild(h3SidesItemName);
-
-    const paraSidesItemDescription = document.createElement('p');
-    paraSidesItemDescription.classList.add('sides-item-description');
-    paraSidesItemDescription.textContent = 'A small bowl of fresh fruit, whatever we find at the market for the day.';
-    divSidesContent.appendChild(paraSidesItemDescription);
-
-    const paraSidesItemPrices = document.createElement('p');
-    paraSidesItemPrices.classList.add('sides-item-price');
-    paraSidesItemPrices.textContent = '$3';
-    divSidesContent.appendChild(paraSidesItemPrices);
-
-    const divSidesItemPict = document.createElement('div');
-    divSidesItemPict.classList.add('sides-item-pict');
-    divSidesItemPict.title = 'Picture of Fresh Fruit';
-    divSidesItemPict.style.background = "url('/home/lukmanakhmad/restaurant-page/assets/images/fresh-fruit.jpeg')";
-    divSidesItemPict.style.backgroundSize = 'cover';
-    divSidesContent.appendChild(divSidesItemPict);
-
-    return divSidesContent;
-}
-
 function createMainDishes() {
     const divMainDishes = document.createElement('div');
     divMainDishes.classList.add('main-dishes');

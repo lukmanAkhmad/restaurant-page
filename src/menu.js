@@ -8,6 +8,7 @@ import frenchToast from '/assets/images/french-toast.jpeg';
 import bearyVeggieSandwich from '/assets/images/beary-veggie-sandwich.jpeg';
 import blt from '/assets/images/blt.jpeg';
 import bagelAndLox from '/assets/images/bagel-and-lox.jpg';
+import honeycomb from '/assets/images/honeycomb.jpeg';
 
 
 

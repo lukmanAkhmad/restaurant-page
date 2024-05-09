@@ -84,7 +84,7 @@ export function createMenuPage() {
 
         const imgSidesItemPict = new Image()
         imgSidesItemPict.classList.add('img-sides-item');
-        imgSidesItemPict.alt = 'Picture of honey tea';
+        imgSidesItemPict.alt = 'Picture of item sides';
         imgSidesItemPict.src = item.img;
         divSidesItemPict.appendChild(imgSidesItemPict);
 
@@ -92,6 +92,38 @@ export function createMenuPage() {
     })
 
     divContent.appendChild(createMainDishes());
+    menuSides.forEach((item) => {
+        const divDishesContent = document.createElement('div');
+        divDishesContent.classList.add('dishes-content');
+
+        const h3DishesItemName = document.createElement('h3');
+        h3DishesItemName.classList.add('dishes-item-name');
+        h3DishesItemName.textContent = item.name;
+        divDishesContent.appendChild(h3DishesItemName);
+
+        const paraDishesItemDescription = document.createElement('p');
+        paraDishesItemDescription.classList.add('dishes-item-description');
+        paraDishesItemDescription.textContent = item.descr;
+        divDishesContent.appendChild(paraDishesItemDescription);
+
+        const paraDishesItemPrice = document.createElement('p');
+        paraDishesItemPrice.classList.add('dishes-item-prices');
+        paraDishesItemPrice.textContent = item.price;
+        divDishesContent.appendChild(paraDishesItemPrice);
+
+
+        const divDishesItemPict = document.createElement('div');
+        divDishesItemPict.classList.add('dishes-item-pict');
+        divDishesContent.appendChild(divDishesItemPict);
+
+        const imgDishesItemPict = new Image()
+        imgDishesItemPict.classList.add('img-dishes-item');
+        imgDishesItemPict.alt = 'Picture of item dishes';
+        imgDishesItemPict.src = item.img;
+        divDishesItemPict.appendChild(imgDishesItemPict);
+
+        divContent.appendChild(divDishesContent);
+    })
 
 
 

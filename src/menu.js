@@ -146,7 +146,7 @@ function createSides() {
     divSides.appendChild(h2Sides);
 
     return divSides;
-}
+};
 
 class ItemSides {
     constructor(name, descr, price, img) {
@@ -155,14 +155,14 @@ class ItemSides {
         this.price = price;
         this.img = img;
     }
-}
+};
 
 let menuSides = [
     new ItemSides('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
             '$1', toastAndJam),
     new ItemSides('Fresh Fruit','A small bowl of fresh fruit, whatever we find at the market for the day.',
             '$3',freshFruit),
-]
+];
 
 function createMainDishes() {
     const divMainDishes = document.createElement('div');
@@ -173,4 +173,20 @@ function createMainDishes() {
     divMainDishes.appendChild(h2MainDishes);
 
     return divMainDishes;
-}
+};
+
+class ItemDishes {
+    constructor(name, descr, price, img) {
+        this.name = name;
+        this.descr = descr;
+        this.price = price;
+        this.img = img;
+    }
+};
+
+let menuDishes = [
+    new ItemDishes('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
+            '$1', toastAndJam),
+    new ItemDishes('Fresh Fruit','A small bowl of fresh fruit, whatever we find at the market for the day.',
+            '$3',freshFruit),
+];

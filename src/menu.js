@@ -25,30 +25,30 @@ export function createMenuPage() {
     divContent.appendChild(createBeverages());
     menuBeverages.forEach((item) => {
         const divBeveragesContent = document.createElement('div');
-        divBeveragesContent.classList.add('beverages-content');
+        divBeveragesContent.classList.add('content');
 
         const h3BeveragesItemName = document.createElement('h3');
-        h3BeveragesItemName.classList.add('beverages-item-name');
+        h3BeveragesItemName.classList.add('item-name');
         h3BeveragesItemName.textContent = item.name;
         divBeveragesContent.appendChild(h3BeveragesItemName);
 
         const paraBeveragesItemDescription = document.createElement('p');
-        paraBeveragesItemDescription.classList.add('beverages-item-description');
+        paraBeveragesItemDescription.classList.add('item-description');
         paraBeveragesItemDescription.textContent = item.descr;
         divBeveragesContent.appendChild(paraBeveragesItemDescription);
 
         const paraBeveragesItemPrice = document.createElement('p');
-        paraBeveragesItemPrice.classList.add('beverages-item-prices');
+        paraBeveragesItemPrice.classList.add('item-prices');
         paraBeveragesItemPrice.textContent = item.price;
         divBeveragesContent.appendChild(paraBeveragesItemPrice);
 
 
         const divBeveragesItemPict = document.createElement('div');
-        divBeveragesItemPict.classList.add('beverages-item-pict');
+        divBeveragesItemPict.classList.add('item-pict');
         divBeveragesContent.appendChild(divBeveragesItemPict);
 
         const imgBeveragesItemPict = new Image()
-        imgBeveragesItemPict.classList.add('img-beverages-item');
+        imgBeveragesItemPict.classList.add('img-item');
         imgBeveragesItemPict.alt = 'Picture of item beverages';
         imgBeveragesItemPict.src = item.img;
         divBeveragesItemPict.appendChild(imgBeveragesItemPict);
@@ -60,30 +60,30 @@ export function createMenuPage() {
     divContent.appendChild(createSides());
     menuSides.forEach((item) => {
         const divSidesContent = document.createElement('div');
-        divSidesContent.classList.add('sides-content');
+        divSidesContent.classList.add('content');
 
         const h3SidesItemName = document.createElement('h3');
-        h3SidesItemName.classList.add('sides-item-name');
+        h3SidesItemName.classList.add('item-name');
         h3SidesItemName.textContent = item.name;
         divSidesContent.appendChild(h3SidesItemName);
 
         const paraSidesItemDescription = document.createElement('p');
-        paraSidesItemDescription.classList.add('sides-item-description');
+        paraSidesItemDescription.classList.add('item-description');
         paraSidesItemDescription.textContent = item.descr;
         divSidesContent.appendChild(paraSidesItemDescription);
 
         const paraSidesItemPrice = document.createElement('p');
-        paraSidesItemPrice.classList.add('sides-item-prices');
+        paraSidesItemPrice.classList.add('item-price');
         paraSidesItemPrice.textContent = item.price;
         divSidesContent.appendChild(paraSidesItemPrice);
 
 
         const divSidesItemPict = document.createElement('div');
-        divSidesItemPict.classList.add('sides-item-pict');
+        divSidesItemPict.classList.add('item-pict');
         divSidesContent.appendChild(divSidesItemPict);
 
         const imgSidesItemPict = new Image()
-        imgSidesItemPict.classList.add('img-sides-item');
+        imgSidesItemPict.classList.add('img-item');
         imgSidesItemPict.alt = 'Picture of item sides';
         imgSidesItemPict.src = item.img;
         divSidesItemPict.appendChild(imgSidesItemPict);
@@ -94,30 +94,30 @@ export function createMenuPage() {
     divContent.appendChild(createMainDishes());
     menuSides.forEach((item) => {
         const divDishesContent = document.createElement('div');
-        divDishesContent.classList.add('dishes-content');
+        divDishesContent.classList.add('content');
 
         const h3DishesItemName = document.createElement('h3');
-        h3DishesItemName.classList.add('dishes-item-name');
+        h3DishesItemName.classList.add('item-name');
         h3DishesItemName.textContent = item.name;
         divDishesContent.appendChild(h3DishesItemName);
 
         const paraDishesItemDescription = document.createElement('p');
-        paraDishesItemDescription.classList.add('dishes-item-description');
+        paraDishesItemDescription.classList.add('item-description');
         paraDishesItemDescription.textContent = item.descr;
         divDishesContent.appendChild(paraDishesItemDescription);
 
         const paraDishesItemPrice = document.createElement('p');
-        paraDishesItemPrice.classList.add('dishes-item-prices');
+        paraDishesItemPrice.classList.add('item-price');
         paraDishesItemPrice.textContent = item.price;
         divDishesContent.appendChild(paraDishesItemPrice);
 
 
         const divDishesItemPict = document.createElement('div');
-        divDishesItemPict.classList.add('dishes-item-pict');
+        divDishesItemPict.classList.add('item-pict');
         divDishesContent.appendChild(divDishesItemPict);
 
         const imgDishesItemPict = new Image()
-        imgDishesItemPict.classList.add('img-dishes-item');
+        imgDishesItemPict.classList.add('img-item');
         imgDishesItemPict.alt = 'Picture of item dishes';
         imgDishesItemPict.src = item.img;
         divDishesItemPict.appendChild(imgDishesItemPict);

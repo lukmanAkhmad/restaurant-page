@@ -6,6 +6,7 @@ import freshFruit from '/assets/images/fresh-fruit.jpeg';
 import pancakes from '/assets/images/pancakes.jpeg';
 import frenchToast from '/assets/images/french-toast.jpeg';
 import bearyVeggieSandwich from '/assets/images/beary-veggie-sandwich.jpeg';
+import blt from '/assets/images/blt.jpeg';
 
 
 

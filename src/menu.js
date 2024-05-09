@@ -4,6 +4,7 @@ import bearyTea from '/assets/images/beary-tea.jpg';
 import toastAndJam from '/assets/images/toast-and-jam.jpeg';
 import freshFruit from '/assets/images/fresh-fruit.jpeg';
 import pancakes from '/assets/images/pancakes.jpeg';
+import frenchToast from '/assets/images/french-toast.jpeg';
 
 
 

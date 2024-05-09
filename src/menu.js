@@ -92,7 +92,7 @@ export function createMenuPage() {
     })
 
     divContent.appendChild(createMainDishes());
-    menuSides.forEach((item) => {
+    menuDishes.forEach((item) => {
         const divDishesContent = document.createElement('div');
         divDishesContent.classList.add('content');
 
@@ -191,9 +191,9 @@ class ItemSides {
 
 let menuSides = [
     new ItemSides('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
-            '$1', toastAndJam),
-    new ItemSides('Fresh Fruit','A small bowl of fresh fruit, whatever we find at the market for the day.',
-            '$3',freshFruit),
+        '$1', toastAndJam),
+    new ItemSides('Fresh Fruit', 'A small bowl of fresh fruit, whatever we find at the market for the day.',
+        '$3', freshFruit),
 ];
 
 function createMainDishes() {
@@ -217,8 +217,22 @@ class ItemDishes {
 };
 
 let menuDishes = [
+    new ItemDishes('Pancakes', 'A stack of homemade buttermilk pancakes, served with our locally sourced maple syrup.',
+        '$4', pancakes),
+    new ItemDishes('French Toast', 'Two slices of the best french toast you will ever eat, served with our locally sourced maple syrup.',
+        '$5', frenchToast),
+    new ItemDishes('Beary Veggie Sandwich', 'Do you like vegetables? Then this is the sandwich for you! Stuffed full of a variety of fresh produce, it will fill you up.',
+        '$8', bearyVeggieSandwich),
+    new ItemDishes('BLT', 'Interested in the Beary Veggie Sandwich but also love bacon? Say no more.',
+        '$6', blt),
+    new ItemDishes('Bagel and Lox', "Our house specialty, you can't go wrong with a hearty bagel topped with sustainably harvested salmon.",
+        '$8', bagelAndLox),
+    new ItemDishes('Honeycomb', "Are you a bear like us? Then you will love our honeycomb. And, yes humans, it is just a piece of honeycomb, not the popular breakfast cereal.",
+        '$6', honeycomb),
+    new ItemDishes('Beary Bowl', "Get a big ole bowl of our berries! Side of honey is $1 extra.",
+        '$8', bearyBowl),
     new ItemDishes('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
-            '$1', toastAndJam),
-    new ItemDishes('Fresh Fruit','A small bowl of fresh fruit, whatever we find at the market for the day.',
-            '$3',freshFruit),
+        '$7', toastAndJam),
+    new ItemDishes('The Beary Best Porridge', "Made by Baby Bear himself, this porridge is guarenteed to be just right, or your money back.",
+        '$5', bearPorridge),
 ];

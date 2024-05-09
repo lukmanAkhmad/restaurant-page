@@ -9,6 +9,7 @@ import bearyVeggieSandwich from '/assets/images/beary-veggie-sandwich.jpeg';
 import blt from '/assets/images/blt.jpeg';
 import bagelAndLox from '/assets/images/bagel-and-lox.jpg';
 import honeycomb from '/assets/images/honeycomb.jpeg';
+import bearyBowl from '/assets/images/beary-bowl.jpg';
 
 
 

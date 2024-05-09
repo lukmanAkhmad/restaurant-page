@@ -12,8 +12,6 @@ import honeycomb from '/assets/images/honeycomb.jpeg';
 import bearyBowl from '/assets/images/beary-bowl.jpg';
 import bearPorridge from '/assets/images/bear-porridge.jpg';
 
-
-
 export function createMenuPage() {
     const divContent = document.querySelector('#content');
 
@@ -55,7 +53,6 @@ export function createMenuPage() {
 
         divContent.appendChild(divBeveragesContent);
     })
-
 
     divContent.appendChild(createSides());
     menuSides.forEach((item) => {
@@ -111,7 +108,6 @@ export function createMenuPage() {
         paraDishesItemPrice.textContent = item.price;
         divDishesContent.appendChild(paraDishesItemPrice);
 
-
         const divDishesItemPict = document.createElement('div');
         divDishesItemPict.classList.add('item-pict');
         divDishesContent.appendChild(divDishesItemPict);
@@ -124,9 +120,6 @@ export function createMenuPage() {
 
         divContent.appendChild(divDishesContent);
     })
-
-
-
     return;
 }
 

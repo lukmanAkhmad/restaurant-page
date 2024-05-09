@@ -231,8 +231,6 @@ let menuDishes = [
         '$6', honeycomb),
     new ItemDishes('Beary Bowl', "Get a big ole bowl of our berries! Side of honey is $1 extra.",
         '$8', bearyBowl),
-    new ItemDishes('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
-        '$7', toastAndJam),
     new ItemDishes('The Beary Best Porridge', "Made by Baby Bear himself, this porridge is guarenteed to be just right, or your money back.",
         '$5', bearPorridge),
 ];

@@ -153,6 +153,8 @@ class ItemSides {
 let menuSides = [
     new ItemSides('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
             '$1', toastAndJam),
+    new ItemSides('Fresh Fruit','A small bowl of fresh fruit, whatever we find at the market for the day.',
+            '$3',freshFruit),
 ]
 
 function createMainDishes() {

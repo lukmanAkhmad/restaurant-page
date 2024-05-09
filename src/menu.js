@@ -10,6 +10,7 @@ import blt from '/assets/images/blt.jpeg';
 import bagelAndLox from '/assets/images/bagel-and-lox.jpg';
 import honeycomb from '/assets/images/honeycomb.jpeg';
 import bearyBowl from '/assets/images/beary-bowl.jpg';
+import bearPorridge from '/assets/images/bear-porridge.jpg';
 
 
 

@@ -3,6 +3,7 @@ import honeyTea from '/assets/images/honey-tea.jpeg';
 import bearyTea from '/assets/images/beary-tea.jpg';
 import toastAndJam from '/assets/images/toast-and-jam.jpeg';
 import freshFruit from '/assets/images/fresh-fruit.jpeg';
+import pancakes from '/assets/images/pancakes.jpeg';
 
 
 
@@ -83,7 +84,6 @@ export function createMenuPage() {
         divContent.appendChild(divSidesContent);
     })
 
-    divContent.appendChild(createSidesContentOne());
     divContent.appendChild(createMainDishes());
 
 

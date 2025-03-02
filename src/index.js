@@ -1,4 +1,4 @@
-// import "./style.css";
+import "./style.css";
 // import odinImage from "./odin.png";
 // import {greeting} from "./greeting";
 import { screenController } from "./uiControl";
@@ -11,5 +11,3 @@ screenController();
 
 
 // console.log(greeting);
-
-console.log("Test!");

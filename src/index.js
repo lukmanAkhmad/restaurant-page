@@ -1,11 +1,15 @@
-import "./style.css";
-import odinImage from "./odin.png";
-import {greeting} from "./greeting";
+// import "./style.css";
+// import odinImage from "./odin.png";
+// import {greeting} from "./greeting";
+import { screenController } from "./uiControl";
+screenController();
 
-const image = document.createElement("img");
-image.src = odinImage;
+// const image = document.createElement("img");
+// image.src = odinImage;
 
-document.body.appendChild(image);
+// document.body.appendChild(image);
 
 
-console.log(greeting);
+// console.log(greeting);
+
+console.log("Test!");

@@ -1,3 +1,5 @@
+import { beverages, sides, mainDishes } from "./restaurant-menu";
+
 function screenController() {
     const divContent = document.querySelector("#content");
     const btnHome = document.querySelector("#btn-home");
@@ -5,13 +7,10 @@ function screenController() {
     const btnAbout = document.querySelector("#btn-about");
 
     btnHome.addEventListener("click", renderHome);
-    btnMenu.addEventListener("click", () => {
-        console.log("button menu onclick")
-    });
+    btnMenu.addEventListener("click", renderMenu);
     btnAbout.addEventListener("click", () => {
         console.log("button about onclick")
     });
-
 
     function renderHome() {
         divContent.textContent = "";
@@ -72,7 +71,7 @@ function screenController() {
         hourSection.appendChild(saturdayText);
 
         const locationSection = document.createElement("div");
-        locationSection.classList.add("div-locationSection","cont-section");
+        locationSection.classList.add("div-locationSection", "cont-section");
         const locationTitle = document.createElement("h3");
         locationTitle.classList.add("h3-location");
         const locationText = document.createElement("p");
@@ -82,13 +81,95 @@ function screenController() {
         locationSection.appendChild(locationTitle);
         locationSection.appendChild(locationText);
 
-
         divContent.appendChild(heading);
         divContent.appendChild(reviewSection);
         divContent.appendChild(hourSection);
         divContent.appendChild(locationSection);
     };
 
+    function renderMenu() {
+        divContent.textContent = "";
+
+        const headingMenu = document.createElement("div");
+        headingMenu.classList.add("div-headingMenu");
+        headingMenu.textContent = "Menu";
+
+        const headingBeverages = document.createElement("div");
+        headingBeverages.classList.add("div-title-menu");
+        headingBeverages.textContent = "Beverages";
+
+        divContent.appendChild(headingMenu);
+        divContent.appendChild(headingBeverages);
+
+        beverages.forEach((val) => {
+            const menuSection = document.createElement("div");
+            menuSection.classList.add("div-menuSection");
+            const itemName = document.createElement("h3");
+            itemName.classList.add("h3-itemName");
+            const itemDescription = document.createElement("p");
+            itemDescription.classList.add("p-itemDescription");
+            const itemPrice = document.createElement("p");
+            itemPrice.classList.add("p-itemPrice");
+            itemName.textContent = val.name;
+            itemDescription.textContent = val.description;
+            itemPrice.textContent = val.price;
+            menuSection.appendChild(itemName);
+            menuSection.appendChild(itemDescription);
+            menuSection.appendChild(itemPrice);
+            divContent.appendChild(menuSection);
+
+        });
+
+        const headingSides = document.createElement("div");
+        headingSides.classList.add("div-title-menu");
+        headingSides.textContent = "Sides";
+
+        divContent.appendChild(headingSides);
+
+        sides.forEach((val) => {
+            const menuSection = document.createElement("div");
+            menuSection.classList.add("div-menuSection");
+            const itemName = document.createElement("h3");
+            itemName.classList.add("h3-itemName");
+            const itemDescription = document.createElement("p");
+            itemDescription.classList.add("p-itemDescription");
+            const itemPrice = document.createElement("p");
+            itemPrice.classList.add("p-itemPrice");
+            itemName.textContent = val.name;
+            itemDescription.textContent = val.description;
+            itemPrice.textContent = val.price;
+            menuSection.appendChild(itemName);
+            menuSection.appendChild(itemDescription);
+            menuSection.appendChild(itemPrice);
+            divContent.appendChild(menuSection);
+
+        });
+
+        const headingMainDishes = document.createElement("div");
+        headingMainDishes.classList.add("div-title-menu");
+        headingMainDishes.textContent = "Main Dishes";
+
+        divContent.appendChild(headingMainDishes);
+
+        mainDishes.forEach((val) => {
+            const menuSection = document.createElement("div");
+            menuSection.classList.add("div-menuSection");
+            const itemName = document.createElement("h3");
+            itemName.classList.add("h3-itemName");
+            const itemDescription = document.createElement("p");
+            itemDescription.classList.add("p-itemDescription");
+            const itemPrice = document.createElement("p");
+            itemPrice.classList.add("p-itemPrice");
+            itemName.textContent = val.name;
+            itemDescription.textContent = val.description;
+            itemPrice.textContent = val.price;
+            menuSection.appendChild(itemName);
+            menuSection.appendChild(itemDescription);
+            menuSection.appendChild(itemPrice);
+
+            divContent.appendChild(menuSection);
+        });
+    };
     renderHome();
 }
 export { screenController };

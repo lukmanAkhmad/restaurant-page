@@ -1,16 +1,15 @@
 import { beverages, sides, mainDishes } from "./restaurant-menu";
+import { contact } from "./contact";
 
 function screenController() {
     const divContent = document.querySelector("#content");
     const btnHome = document.querySelector("#btn-home");
     const btnMenu = document.querySelector("#btn-menu");
-    const btnAbout = document.querySelector("#btn-about");
+    const btnContact = document.querySelector("#btn-contact");
 
     btnHome.addEventListener("click", renderHome);
     btnMenu.addEventListener("click", renderMenu);
-    btnAbout.addEventListener("click", () => {
-        console.log("button about onclick")
-    });
+    btnContact.addEventListener("click", renderContact);
 
     function renderHome() {
         divContent.textContent = "";
@@ -170,6 +169,41 @@ function screenController() {
             divContent.appendChild(menuSection);
         });
     };
+
+    function renderContact() {
+        console.log("button Contact onclick")
+        divContent.textContent = "";
+
+        const headingContact = document.createElement("div");
+        headingContact.classList.add("div-headingContact");
+        headingContact.textContent = "Contact Us";
+
+        divContent.appendChild(headingContact);
+
+        contact.forEach((val) => {
+            const menuSection = document.createElement("div");
+            menuSection.classList.add("div-menuSection");
+            const personName = document.createElement("h3");
+            personName.classList.add("h3-personName");
+            const personPosition = document.createElement("p");
+            personPosition.classList.add("p-personPosition");
+            const personPhone = document.createElement("p");
+            personPhone.classList.add("p-personPhone");
+            const personEmail = document.createElement("p");
+            personEmail.classList.add("p-personEmail");
+            personName.textContent = val.name;
+            personPosition.textContent = val.position;
+            personPhone.textContent = val.phone;
+            personEmail.textContent = val.email;
+            menuSection.appendChild(personName);
+            menuSection.appendChild(personPosition);
+            menuSection.appendChild(personPhone);
+            menuSection.appendChild(personEmail);
+            divContent.appendChild(menuSection);
+
+        });
+    };
+
     renderHome();
-}
+};
 export { screenController };

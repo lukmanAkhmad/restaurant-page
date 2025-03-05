@@ -171,7 +171,6 @@ function screenController() {
     };
 
     function renderContact() {
-        console.log("button Contact onclick")
         divContent.textContent = "";
 
         const headingContact = document.createElement("div");
@@ -181,8 +180,8 @@ function screenController() {
         divContent.appendChild(headingContact);
 
         contact.forEach((val) => {
-            const menuSection = document.createElement("div");
-            menuSection.classList.add("div-menuSection");
+            const contactSection = document.createElement("div");
+            contactSection.classList.add("div-contactSection");
             const personName = document.createElement("h3");
             personName.classList.add("h3-personName");
             const personPosition = document.createElement("p");
@@ -195,11 +194,11 @@ function screenController() {
             personPosition.textContent = val.position;
             personPhone.textContent = val.phone;
             personEmail.textContent = val.email;
-            menuSection.appendChild(personName);
-            menuSection.appendChild(personPosition);
-            menuSection.appendChild(personPhone);
-            menuSection.appendChild(personEmail);
-            divContent.appendChild(menuSection);
+            contactSection.appendChild(personName);
+            contactSection.appendChild(personPosition);
+            contactSection.appendChild(personPhone);
+            contactSection.appendChild(personEmail);
+            divContent.appendChild(contactSection);
 
         });
     };

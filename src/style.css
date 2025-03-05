@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-header{
+header {
     background-color: chocolate;
 
     display: flex;
@@ -11,20 +11,22 @@ header{
     align-items: center;
     height: 100px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
 
-button{
+button {
     width: 135px;
     height: 50px;
 }
 
-#content{
-    border: 1px solid royalblue;
+#content {
+    border: 15px solid #ffde73;
+    border-radius: 21px;
     box-sizing: border-box;
 
     display: flex;
@@ -32,8 +34,48 @@ button{
     align-items: center;
     max-width: 850px;
     margin: 0 auto;
+    gap: 25px;
+    padding: 25px 0;
 }
 
-.cont-section{
-    border: 1px solid darkorchid;
+.div-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 9px solid #c16a08;
+    border-radius: 15px;
+    width: 710px;
+    height: 60px;
+    font-size: 37px;
+    font-weight: bolder;
+}
+
+.cont-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #c16a08;
+    border-radius: 9px;
+    width: 450px;
+    height: 225px;
+    padding: 0 15px;
+}
+
+.div-reviewSection {
+    gap: 19px;
+}
+
+.div-hourSection,
+.div-locationSection {
+    gap: 7px;
+}
+
+.p-customer,
+.h3-hour,
+.h3-location {
+    align-self: start;
+    font-size: 19px;
+    font-weight: bolder;
 }

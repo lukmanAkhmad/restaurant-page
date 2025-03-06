@@ -38,7 +38,9 @@ button {
     padding: 25px 0;
 }
 
-.div-heading {
+.div-heading,
+.div-headingMenu,
+.div-headingContact {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,4 +80,66 @@ button {
     align-self: start;
     font-size: 19px;
     font-weight: bolder;
+}
+
+.div-title-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 9px solid #c16a08;
+    border-radius: 15px;
+    width: 285px;
+    height: 60px;
+    font-size: 37px;
+    font-weight: bolder;
+    margin-top: 75px;
+    margin-bottom: 5px;
+}
+
+.div-menuSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #c16a08;
+    border-radius: 9px;
+    width: 450px;
+    height: 225px;
+    padding: 0 15px;
+}
+
+.h3-itemName {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p-itemPrice {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div-contactSection {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #c16a08;
+    border-radius: 9px;
+    width: 450px;
+    height: 225px;
+    padding: 0 15px;
+}
+
+.h3-personName {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.p-personPosition,
+.p-personPhone,
+.p-personEmail {
+    margin-left: 60px;
 }

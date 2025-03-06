@@ -22,6 +22,19 @@ nav {
 button {
     width: 135px;
     height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffde73;
+    color: white;
+    box-shadow: 2px 2px 2px #e4e4e4;
+}
+
+button:hover {
+    background-color: white;
+    color: #ffde73;
+    box-shadow: 2px 2px 2px #ffde73;
 }
 
 #content {
